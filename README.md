@@ -1,8 +1,4 @@
-Here’s the complete `README.md` file for your project, including all sections, formatted properly for GitHub.  
 
----
-
-```markdown
 # ⚽ Football Analysis Using YOLOv5  
 
 ## Introduction  
