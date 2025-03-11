@@ -72,8 +72,7 @@ Here are some sample predictions from our fine-tuned YOLOv5 model:
 ## 📌 Installation  
 
 To set up the project, follow these steps:  
-```
-1️⃣ **Clone the repository:**  
+1️⃣ **Clone the repository:** 
 ```bash
 git clone https://github.com/ahmedali610/Football_Analysis_using_YOLOv5.git
 cd Football-Analysis-YOLOv5
