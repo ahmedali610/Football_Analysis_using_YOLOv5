@@ -47,39 +47,33 @@ This project integrates multiple **computer vision** and **AI techniques**, maki
 ## 📷 Model Predictions  
 Here are some sample predictions from our fine-tuned YOLOv5 model:  
 
-![players](https://github.com/user-attachments/assets/6c803cb7-4703-40d9-af14-e01904fdf512)
+![Fine-Tuned Model Prediction](images/prediction.png)  
 
 ---
 
 ## 📈 Training Metrics  
 
-### ✅ Validation Precision
-![download (12)](https://github.com/user-attachments/assets/6e029353-0151-48f4-bbc1-f1392a9faf72)
+### ✅ Validation Precision vs Epochs  
+![Validation Precision](images/precision.png)  
 
-### ✅ Validation Recall
-![download (13)](https://github.com/user-attachments/assets/a62b8f82-b404-4c4c-a50e-9d26d360a1e4)
+### ✅ Validation Recall vs Epochs  
+![Validation Recall](images/recall.png)  
 
-### ✅ Training and Validation Loss
-![download (14)](https://github.com/user-attachments/assets/682750b0-cdc7-4b31-8239-9c189969a70b)
-
-
-### ✅ Validation mAP Metrics
-![download (11)](https://github.com/user-attachments/assets/25103bbd-afcf-49b5-95f2-e49baa83fd89)
-
+### ✅ Validation mAP Metrics vs Epochs  
+![Validation mAP](images/map.png)  
 
 ### ✅ Confusion Matrix  
-![confusion matrix](https://github.com/user-attachments/assets/6b4e15c5-ea3f-4419-aee5-c6ae59123fc1)
-
+![Confusion Matrix](images/confusion_matrix.png)  
 
 ---
 
 ## 📌 Installation  
 
 To set up the project, follow these steps:  
-```
+
 1️⃣ **Clone the repository:**  
 ```bash
-git clone https://github.com/ahmedali610/Football_Analysis_using_YOLOv5.git
+git clone https://github.com/your-username/Football-Analysis-YOLOv5.git
 cd Football-Analysis-YOLOv5
 ```
 
@@ -88,9 +82,91 @@ cd Football-Analysis-YOLOv5
 pip install -r requirements.txt
 ```
 
-3️⃣ Run the analysis on a video
-
+3️⃣ **Download YOLOv5 model:**  
 ```bash
-python main.py
+git clone https://github.com/ultralytics/yolov5.git
+cd yolov5
+pip install -r requirements.txt
 ```
+
+4️⃣ **Run the detection script:**  
+```bash
+python detect.py --source "video.mp4" --weights best.pt --conf 0.5
+```
+
 ---
+
+## 📂 Project Structure  
+```
+Football-Analysis-YOLOv5/
+│── yolov5/                  # YOLOv5 model and scripts
+│── data/                    # Dataset and annotations
+│── images/                  # Model predictions and training plots
+│── models/                  # Trained YOLOv5 model weights
+│── scripts/                 # Utility scripts for data processing
+│── detect.py                # Main script for object detection
+│── train.py                 # Model training script
+│── README.md                # Project documentation
+│── requirements.txt         # Required Python dependencies
+```
+
+---
+
+## 🏆 Results & Insights  
+- **High Accuracy**: Fine-tuned YOLOv5 achieves precise object detection and tracking.  
+- **Effective Team Classification**: K-means clustering segments players based on jersey colors.  
+- **Accurate Distance Measurement**: Perspective transformation allows real-world movement tracking.  
+- **Real-time Analysis**: The model performs real-time ball possession estimation and speed tracking.  
+
+---
+
+## 📌 Future Improvements  
+🔹 **Live Video Processing** – Implement real-time tracking for live matches.  
+🔹 **Advanced Player Identification** – Assign specific player IDs for individual tracking.  
+🔹 **Tactical Analysis** – Analyze formations and team strategies.  
+🔹 **Integration with AR/VR** – Enhance the viewer experience with interactive analytics.  
+
+---
+
+## 💡 References  
+- **YOLOv5 Official Repo**: [Ultralytics YOLOv5](https://github.com/ultralytics/yolov5)  
+- **Multi-Object Tracking**: [ByteTrack](https://github.com/ifzhang/ByteTrack)  
+- **Perspective Transformation**: [OpenCV Docs](https://docs.opencv.org/master/da/d6e/tutorial_py_geometric_transformations.html)  
+
+---
+
+## 🤝 Contributing  
+We welcome contributions! If you'd like to improve the model or add new features, feel free to fork the repo and submit a pull request.  
+
+1. Fork the repository  
+2. Create a new branch (`git checkout -b feature-branch`)  
+3. Commit your changes (`git commit -m "Add new feature"`)  
+4. Push to the branch (`git push origin feature-branch`)  
+5. Open a pull request  
+
+---
+
+## 📬 Contact  
+For any inquiries or collaborations, feel free to reach out!  
+
+📧 **Email**: your-email@example.com  
+🐦 **Twitter**: [@your_twitter](https://twitter.com/your_twitter)  
+🔗 **LinkedIn**: [your-linkedin-profile](https://linkedin.com/in/your-profile)  
+
+---
+
+⭐ **If you find this project useful, please consider giving it a star!** ⭐  
+
+🚀 Happy Coding! ⚽  
+```
+
+---
+
+### 🔥 Key Features of This README:  
+✅ **Clean and structured layout**  
+✅ **Formatted for GitHub Markdown**  
+✅ **Includes images, metrics, and insights**  
+✅ **Step-by-step installation guide**  
+✅ **Future improvements and contribution guidelines**  
+
+Let me know if you need any modifications! 🚀🔥
